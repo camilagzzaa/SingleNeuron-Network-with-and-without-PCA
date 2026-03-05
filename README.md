@@ -142,7 +142,7 @@ One additional dependency must be installed in Colab:
 # Authors
 
 * Mariana Samperio – [[GitHub repository link](https://github.com/mariana-samperio-cuevas/SingleNeuron-Network-with-and-without-PCA.git)]
-* Matteo Peroni – [GitHub repository link]
+* Matteo Peroni – [[GitHub repository link](https://github.com/perofficial/bank_transaction_fraud_detection_model)]
 * Camila Gonzalez – [[GitHub repository link](https://github.com/camilagzzaa/SingleNeuron-Network-with-and-without-PCA.git)]
 
 
