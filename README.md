@@ -51,10 +51,10 @@ After uploading the dataset, load it in the notebook:
 ```python
 import pandas as pd
 
-dataset = pd.read_csv("dataset_name.csv")
+dataset = pd.read_csv("dataset.csv")
 ```
 
-Replace `"dataset_name.csv"` with the correct filename.
+Replace `"dataset.csv"` with the correct filename.
 
 ---
 
