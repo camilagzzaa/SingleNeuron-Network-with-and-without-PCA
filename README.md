@@ -2,12 +2,26 @@
 
 ## Overview
 
-This project implements a **single-neuron neural network** to detect fraudulent bank transactions. The notebook includes preprocessing steps, handling class imbalance using **Random Undersampling**, model training, evaluation, and an additional experiment using **PCA (Principal Component Analysis)**.
+This project implements a **single-neuron neural network** to detect fraudulent bank transactions. The notebook includes preprocessing, handling class imbalance using **Random Undersampling**, model training, evaluation, and an additional experiment using **PCA (Principal Component Analysis)**.
 
-The original dataset comes from Kaggle, but the version used in this project was **preprocessed beforehand** to make it suitable for the experiments. For this reason, the **processed dataset is already included in this repository** and must be uploaded manually when running the notebook.
+The original dataset comes from Kaggle, but the version used in this project was **preprocessed beforehand** to make it suitable for the experiments.
 
 Original dataset source:
 https://www.kaggle.com/datasets/marusagar/bank-transaction-fraud-detection
+
+To upload the dataset to the repository, the processed dataset had to be **compressed** due to file size limitations. Therefore, the dataset is included in the repository as:
+
+**`dataset_compressed.zip`**
+
+---
+
+# Repository Contents
+
+The repository contains the following files:
+
+* **Single-Neuron Network with and without PCA.ipynb** – Main notebook containing the full experiment.
+* **dataset_compressed.zip** – Compressed version of the processed dataset used in the notebook.
+* **README.md** – Instructions on how to run the project.
 
 ---
 
@@ -16,48 +30,61 @@ https://www.kaggle.com/datasets/marusagar/bank-transaction-fraud-detection
 ## 1. Download the Repository
 
 Download or clone this repository to your computer.
-The repository already includes the **preprocessed dataset used in the experiments**.
 
 ---
 
-## 2. Open the Notebook in Google Colab
+## 2. Extract the Dataset
+
+Locate the file:
+
+```
+dataset_compressed.zip
+```
+
+Unzip the file on your computer. This will produce the **processed dataset file used in the notebook**.
+
+---
+
+## 3. Open the Notebook in Google Colab
 
 1. Go to **https://colab.research.google.com**
 2. Click **File → Upload Notebook**
-3. Upload the `.ipynb` notebook from this repository.
+3. Upload the notebook:
+
+```
+Single-Neuron Network with and without PCA.ipynb
+```
 
 ---
 
-## 3. Upload the Dataset to Colab
+## 4. Upload the Dataset to Colab
 
-Since the dataset is included in the repository, upload it manually to the Colab environment.
-
-Run the following cell:
+Once the notebook is open, upload the extracted dataset file by running:
 
 ```python
 from google.colab import files
 uploaded = files.upload()
 ```
 
-Then select the **processed dataset file included in this repository**.
+Select the **dataset file that you extracted from `dataset_compressed.zip`**.
 
 ---
 
-## 4. Load the Dataset
+## 5. Load the Dataset
 
-After uploading the dataset, load it in the notebook:
+After uploading, load the dataset in the notebook:
 
 ```python
 import pandas as pd
 
-dataset = pd.read_csv("dataset.csv")
+dataset = pd.read_csv("dataset_name.csv")
 ```
 
-Replace `"dataset.csv"` with the correct filename.
+Replace `"dataset_name.csv"` with the name of the extracted dataset file.
 
 ---
 
-## 5. Run the Notebook
+## 6. Run the Notebook
 
 Once the dataset is uploaded:
 
@@ -65,11 +92,11 @@ Once the dataset is uploaded:
 2. The notebook will automatically:
 
    * load the dataset
-   * perform preprocessing
-   * handle class imbalance using **Random Undersampling**
+   * preprocess the data
+   * balance the training set using **Random Undersampling**
    * scale the features
-   * train the single-neuron model
-   * evaluate the model
+   * train the **single-neuron neural network**
+   * evaluate model performance
    * run the **PCA dimensionality reduction experiment**
 
 ---
@@ -105,10 +132,12 @@ One additional dependency must be installed in Colab:
 
 # Notes
 
-* The dataset included in this repository is **a preprocessed version of the original Kaggle dataset**.
-* The preprocessing was done beforehand to make the dataset suitable for experimentation.
-* Fraud detection datasets are typically **highly imbalanced**, which is why **Random Undersampling** was applied during training.
-* PCA was also tested to evaluate the impact of **dimensionality reduction on model performance**.
+* The dataset in the repository is **not the original Kaggle dataset**, but a **preprocessed version used for the experiments**.
+* The dataset was **compressed (`dataset_compressed.zip`) to allow it to be uploaded to the repository**.
+* Fraud detection datasets are **highly imbalanced**, which is why **Random Undersampling** was applied during training.
+* PCA was tested to evaluate the effect of **dimensionality reduction on model performance**.
+
+---
 
 ---
 
