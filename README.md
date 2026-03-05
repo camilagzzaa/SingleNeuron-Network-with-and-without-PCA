@@ -115,7 +115,7 @@ One additional dependency must be installed in Colab:
 
 # Authors
 
-* Camila – [GitHub repository link]
+* Camila – [[GitHub repository link](https://github.com/camilagzzaa/04-single-neuron.git)]
 * Team Member – [GitHub repository link]
 * Team Member – [GitHub repository link]
 
