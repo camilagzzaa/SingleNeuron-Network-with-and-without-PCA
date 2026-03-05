@@ -4,8 +4,6 @@
 
 This project implements a **single-neuron neural network** to detect fraudulent bank transactions. The notebook includes preprocessing, handling class imbalance using **Random Undersampling**, model training, evaluation, and an additional experiment using **PCA (Principal Component Analysis)**.
 
-The original dataset comes from Kaggle, but the version used in this project was **preprocessed beforehand** to make it suitable for the experiments.
-
 Original dataset source:
 https://www.kaggle.com/datasets/marusagar/bank-transaction-fraud-detection
 
